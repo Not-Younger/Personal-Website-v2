@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "@/app/ui/globals.css";
 import Provider from "@/app/providers";
-import ThemeSwitcher from "@/app/ui/ThemeSwitcher";
+import NavBar from "@/app/ui/Navbar";
 
 export const metadata: Metadata = {
-  title: "Jonathan Young",
-  description: "Software Engineer",
+  title: "Gym App",
+  description: "App for tracking weight room progress",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Provider>
-          <ThemeSwitcher />
+          <NavBar />
           {children}
         </Provider>
       </body>
