@@ -9,6 +9,7 @@ const ThemeSwitcher = () => {
 
   useEffect(() => {
     setMounted(true);
+    setTheme("light");
   }, []);
 
   if (!mounted) {
@@ -18,8 +19,7 @@ const ThemeSwitcher = () => {
   return (
     <div className="flex space-x-1">
       <div>
-        <Switch onChange={() => setTheme((theme == "light") ? "dark" : "light")} />
-        <p>{(theme == "light" ? "Light" : "Dark")} theme.</p>
+        <Switch onChange={() => setTheme((theme == "dark") ? "light" : "dark")} />
       </div>
     </div>
   );
