@@ -1,7 +1,8 @@
 "use client";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
-import Switch from '@mui/material/Switch';
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -19,7 +20,9 @@ const ThemeSwitcher = () => {
   return (
     <div className="flex space-x-1">
       <div>
-        <Switch onChange={() => setTheme((theme == "dark") ? "light" : "dark")} />
+        <button onClick={() => setTheme((theme == "dark") ? "light" : "dark")}>
+          {theme == 'dark' ? <LightModeIcon fontSize="large"/> : <DarkModeIcon fontSize="large"/>}
+        </button>
       </div>
     </div>
   );

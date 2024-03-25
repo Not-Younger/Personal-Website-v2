@@ -4,8 +4,8 @@ import Providers from "@/app/providers";
 import NavBar from "@/app/ui/Navbar";
 
 export const metadata: Metadata = {
-  title: "Gym App",
-  description: "App for tracking weight room progress",
+  title: "Jonathan Young",
+  description: "Personal Portfolio",
 };
 
 export default function RootLayout({

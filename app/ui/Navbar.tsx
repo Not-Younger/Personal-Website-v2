@@ -1,6 +1,5 @@
 import ThemeSwitcher from "@/app/ui/ThemeSwitcher";
-import LightModeIcon from "@mui/icons-material/LightMode";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
+
 
 export default function Navbar() {
   return (
@@ -12,11 +11,7 @@ export default function Navbar() {
           <p className="text-s">Software Engineer</p>
         </div>
       </div>
-      <div className="flex items-center">
-        <LightModeIcon />
-        <ThemeSwitcher />
-        <DarkModeIcon />
-      </div>
+      <ThemeSwitcher />
     </div>
   );
 }
