@@ -1,8 +1,29 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
+import { useState, useEffect } from "react";
 import ThemeSwitcher from "@/app/components/ThemeSwitcher";
+import Menu from "@/app/components/Menu";
 
 const Navbar = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 640px)");
+    setIsSmallScreen(mediaQuery.matches);
+
+    const handler = (event: MediaQueryListEvent) => {
+      setIsSmallScreen(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handler);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handler);
+    };
+  }, []);
+
   return (
     <header className="flex justify-between p-5 items-center border-b gap-8 dark:bg-gray-900">
       <Link href="http://localhost:3000" className="flex-none flex items-center">
@@ -13,9 +34,13 @@ const Navbar = () => {
         </div>
       </Link>
       <div className="flex items-center justify-between gap-4">
-        <ThemeSwitcher />
-        <Link href="http://localhost:3000/about">About Me</Link>
-        <Link href="http://localhost:3000/resume">Resume</Link>
+        {!isSmallScreen ? (
+          <>
+            <ThemeSwitcher />
+            <Link href="http://localhost:3000/about">About Me</Link>
+            <Link href="http://localhost:3000/resume">Resume</Link>
+          </>
+        ) : <Menu />}
       </div>
     </header>
   );
