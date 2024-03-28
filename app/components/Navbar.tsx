@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { useState, useEffect } from "react";
 import ThemeSwitcher from "@/app/components/ThemeSwitcher";
-import { DropdownItem, DropdownMenu } from "@/app/components/Dropdown";
+import { DropdownMenu } from "@/app/components/Dropdown";
 
 const Navbar = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -45,15 +45,7 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <ThemeSwitcher />
-            <DropdownMenu>
-              <DropdownItem text="Home" href="http://localhost:3000/" />
-              <DropdownItem
-                text="About Me"
-                href="http://localhost:3000/about"
-              />
-              <DropdownItem text="Resume" href="http://localhost:3000/resume" />
-            </DropdownMenu>
+            <DropdownMenu />
           </>
         )}
       </div>
