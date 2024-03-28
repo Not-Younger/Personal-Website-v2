@@ -44,9 +44,7 @@ const Navbar = () => {
             <Link href="http://localhost:3000/resume">Resume</Link>
           </>
         ) : (
-          <>
-            <DropdownMenu />
-          </>
+          <DropdownMenu />
         )}
       </div>
     </header>

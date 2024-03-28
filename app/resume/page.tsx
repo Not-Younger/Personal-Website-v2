@@ -6,7 +6,7 @@ const ResumePage: React.FC = () => {
     <embed
     src="resume.pdf#toolbar=0"
     title="resume.pdf"
-    className="w-full h-screen"
+    className="w-full h-[600px]"
   />
   );
 };
