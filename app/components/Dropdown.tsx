@@ -67,7 +67,7 @@ export function DropdownMenu() {
   };
 
   return (
-    <div className="fixed flex flex-col items-start w-[120px] right-2 top-[0.85rem]">
+    <div className="relative flex flex-col items-start w-[120px]">
       <button
         className="flex justify-between border rounded p-2 bg-white dark:bg-gray-900 dark:hover:brightness-125 hover:brightness-90 w-full"
         onClick={() => setIsOpen(!isOpen)}
@@ -76,7 +76,7 @@ export function DropdownMenu() {
         <div>{isOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}</div>
       </button>
       {isOpen && (
-        <div className="flex flex-col w-full bg-white dark:bg-gray-800 p-1 rounded mt-2 gap-1 border">
+        <div className="absolute flex flex-col w-full bg-white dark:bg-gray-800 p-1 rounded mt-2 gap-1 border top-10">
           <DropdownItem text="Home" href="http://localhost:3000/" />
           <DropdownItem text="About Me" href="http://localhost:3000/about" />
           <DropdownItem text="Resume" href="http://localhost:3000/resume" />
