@@ -5,7 +5,7 @@ import XIcon from '@mui/icons-material/X';
 
 const Footer = () => {
   return (
-    <footer className="px-4 sm:px-6 py-6 mt-10">
+    <footer id="footer" className="px-4 sm:px-6 py-6 mt-10">
       <div className="flex justify-center gap-4 text-sm text-gray-500 mb-4">
         <a href="https://www.linkedin.com/in/jonathan-p-young/" target="_blank" rel="noreferrer" className="flex items-center justify-center">
           <LinkedInIcon className="mr-2" />

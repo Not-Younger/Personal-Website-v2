@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { useState, useEffect } from "react";
 import ThemeSwitcher from "@/app/components/ThemeSwitcher";
-import { DropdownMenu } from "@/app/components/Dropdown";
+import DropdownMenu from "@/app/components/Dropdown";
 
 const Navbar = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -25,12 +25,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="flex justify-between p-2 items-center border-b gap-8 dark:bg-gray-900">
+    <header className="flex justify-between p-4 items-center border-b gap-4 dark:bg-gray-900">
       <Link
         href="http://localhost:3000"
         className="flex-none flex items-center"
       >
-        <div className="mr-4 text-4xl">👾</div>
+        <div className="mr-4 text-4xl">
+          <div className="bg-purple-300 w-[50px] h-[50px] rounded-full flex items-center justify-center">👾</div>
+        </div>
         <div className="text-left">
           <p className="text-2xl">Jonathan Young</p>
           <p className="text-s">Software Engineer</p>

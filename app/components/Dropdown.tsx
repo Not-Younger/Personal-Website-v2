@@ -9,7 +9,7 @@ import { useTheme } from "next-themes";
 import { SunIcon } from "@heroicons/react/24/outline";
 import { MoonIcon } from "@heroicons/react/24/solid";
 
-export function DropdownItem(props: { text: string; href: string }) {
+const DropdownItem = (props: { text: string; href: string }) => {
   return (
     <Link href={props.href}>
       <button className="w-full text-left justify-center p-1 bg-gray-100 dark:bg-gray-900 border-l-2 border-transparent rounded-r-lg dark:hover:brightness-125 hover:brightness-90 dark:hover:border-l-white hover:border-l-gray-900">
@@ -19,7 +19,7 @@ export function DropdownItem(props: { text: string; href: string }) {
   );
 }
 
-export function DropdownMenu() {
+const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
@@ -67,7 +67,7 @@ export function DropdownMenu() {
   };
 
   return (
-    <div className="relative flex flex-col items-start w-[120px]">
+    <div className="relative flex flex-col items-start w-24 z-20">
       <button
         className="flex justify-between border rounded p-2 bg-white dark:bg-gray-900 dark:hover:brightness-125 hover:brightness-90 w-full"
         onClick={() => setIsOpen(!isOpen)}
@@ -86,3 +86,5 @@ export function DropdownMenu() {
     </div>
   );
 }
+
+export default DropdownMenu;
