@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { useState, useEffect } from "react";
 import ThemeSwitcher from "@/app/components/ThemeSwitcher";
-import Menu from "@/app/components/Menu";
+import { DropdownItem, DropdownMenu } from "@/app/components/Dropdown";
 
 const Navbar = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -25,8 +25,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="flex justify-between p-5 items-center border-b gap-8 dark:bg-gray-900">
-      <Link href="http://localhost:3000" className="flex-none flex items-center">
+    <header className="flex justify-between p-2 items-center border-b gap-8 dark:bg-gray-900">
+      <Link
+        href="http://localhost:3000"
+        className="flex-none flex items-center"
+      >
         <div className="mr-4 text-4xl">👾</div>
         <div className="text-left">
           <p className="text-2xl">Jonathan Young</p>
@@ -40,7 +43,19 @@ const Navbar = () => {
             <Link href="http://localhost:3000/about">About Me</Link>
             <Link href="http://localhost:3000/resume">Resume</Link>
           </>
-        ) : <Menu />}
+        ) : (
+          <>
+            <ThemeSwitcher />
+            <DropdownMenu>
+              <DropdownItem text="Home" href="http://localhost:3000/" />
+              <DropdownItem
+                text="About Me"
+                href="http://localhost:3000/about"
+              />
+              <DropdownItem text="Resume" href="http://localhost:3000/resume" />
+            </DropdownMenu>
+          </>
+        )}
       </div>
     </header>
   );
