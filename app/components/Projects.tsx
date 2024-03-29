@@ -2,7 +2,7 @@ import ProjectCard from "@/app/components/ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col items-center justify-center space-y-10 py-20 bg-purple-200 dark:bg-gray-900">
+    <div id="projects" className="flex flex-col items-center justify-center space-y-10 py-20 bg-purple-200 dark:bg-gray-900">
       <h2 className="max-w-3xl text-center font-bold text-gray-900 dark:text-purple-100 text-3xl leading-tight">
         My Projects
       </h2>

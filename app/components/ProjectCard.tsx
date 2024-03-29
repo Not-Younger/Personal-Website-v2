@@ -25,7 +25,7 @@ const ProjectCard = (project: Project) => {
         <p className="px-4 pt-2">{project.description}</p>
       </div>
       <div className="text-right p-4">
-        <a href={project.href} className="text-right opacity-50">
+        <a href={project.href} className="text-right opacity-50 hover:brightness-150">
           View on GitHub
         </a>
       </div>
