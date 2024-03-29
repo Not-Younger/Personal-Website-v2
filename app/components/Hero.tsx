@@ -41,7 +41,7 @@ const Hero = () => {
             .getElementById("footer")
             ?.scrollIntoView({ behavior: "smooth" })
         }
-        className="text-lg w-[180px] bg-gradient-to-r from-[#ff874f] to-[#ec5e95] rounded-lg text-gray-50 font-semibold py-[10px] px-4 z-10"
+        className="text-lg w-[180px] bg-gradient-to-r from-[#ff874f] to-[#ec5e95] rounded-lg text-gray-50 font-semibold py-[10px] px-4 z-10 hover:brightness-125"
       >
         Contact Me
       </button>

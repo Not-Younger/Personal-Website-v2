@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <header className="flex justify-center p-4 items-center border-b gap-4 dark:bg-gray-900">
-      <div className="flex justify-between w-full xl:max-w-4xl">
+      <div className="flex justify-between w-full lg:max-w-4xl">
         <Link
           href="http://localhost:3000"
           className="flex-none flex items-center"
@@ -47,13 +47,13 @@ const Navbar = () => {
               <ThemeSwitcher />
               <Link
                 href="http://localhost:3000/about"
-                className="border border-transparent hover:border-gray-400 hover:brightness-110 p-1 rounded"
+                className="border border-transparent hover:border-gray-400 hover:brightness-110 p-1 rounded hover:-translate-y-[0.05rem] duration-500"
               >
                 About Me
               </Link>
               <Link
                 href="http://localhost:3000/resume"
-                className="border border-transparent hover:border-gray-400 hover:brightness-110 p-1 rounded"
+                className="border border-transparent hover:border-gray-400 hover:brightness-110 p-1 rounded hover:-translate-y-[0.05rem] duration-500"
               >
                 Resume
               </Link>
