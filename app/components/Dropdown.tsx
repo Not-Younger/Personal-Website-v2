@@ -77,9 +77,9 @@ const DropdownMenu = () => {
       </button>
       {isOpen && (
         <div className="absolute flex flex-col w-full bg-white dark:bg-gray-800 p-1 rounded mt-2 gap-1 border top-10">
-          <DropdownItem text="Home" href="http://localhost:3000/" />
-          <DropdownItem text="About Me" href="http://localhost:3000/about" />
-          <DropdownItem text="Resume" href="http://localhost:3000/resume" />
+          <DropdownItem text="Home" href="/" />
+          <DropdownItem text="About Me" href="/about" />
+          <DropdownItem text="Resume" href="/resume" />
           {renderThemeChanger()}
         </div>
       )}

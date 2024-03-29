@@ -28,7 +28,7 @@ const Navbar = () => {
     <header className="flex justify-center p-4 items-center border-b gap-4 dark:bg-gray-900">
       <div className="flex justify-between w-full lg:max-w-4xl">
         <Link
-          href="http://localhost:3000"
+          href="/"
           className="flex-none flex items-center"
         >
           <div className="mr-4 text-4xl">
@@ -46,13 +46,13 @@ const Navbar = () => {
             <>
               <ThemeSwitcher />
               <Link
-                href="http://localhost:3000/about"
+                href="/about"
                 className="border border-transparent hover:border-gray-400 hover:brightness-110 p-1 rounded hover:-translate-y-[0.05rem] duration-500"
               >
                 About Me
               </Link>
               <Link
-                href="http://localhost:3000/resume"
+                href="/resume"
                 className="border border-transparent hover:border-gray-400 hover:brightness-110 p-1 rounded hover:-translate-y-[0.05rem] duration-500"
               >
                 Resume

@@ -30,7 +30,7 @@ const Hero = () => {
           </h1>
         </div>
 
-        <p className="text-lg text-center font-medium text-white dark:text-purple-100">
+        <p className="text-lg text-center text-white dark:text-purple-100">
           I&apos;m an undergraduate student studying Computer Science who has a
           passion for software development.
         </p>
