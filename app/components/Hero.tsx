@@ -7,7 +7,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const Hero = () => {
   return (
-    <div className="hero relative flex flex-col items-center justify-center space-y-10 py-40">
+    <div className="hero relative flex flex-col items-center justify-center lg:space-y-10 py-40">
       <svg className="absolute inset-0">
         <filter id="noise" x="0%" y="0%" width="100%" height="100%">
           <feTurbulence baseFrequency="0.5 0.5" result="NOISE" />
@@ -21,7 +21,7 @@ const Hero = () => {
         ></rect>
       </svg>
       <div className="relative flex flex-col items-center space-y-6 max-w-5xl">
-        <div className="flex items-center gap-2 px-2">
+        <div className="flex items-center gap-1 p-2">
           <Image
             src="/me.jpeg"
             alt="Picture of me!"
@@ -35,11 +35,11 @@ const Hero = () => {
           </h1>
         </div>
 
-        <p className="text-lg text-center text-white dark:text-purple-100">
+        <p className="text-lg text-center text-white dark:text-purple-100 px-4">
           I&apos;m an undergraduate student studying Computer Science who has a
           passion for software development.
         </p>
-        <p className="text-lg text-center text-white dark:text-purple-100">
+        <p className="text-lg text-center text-white dark:text-purple-100 px-4">
           At the moment I&apos;m learning about full-stack web development. The stack I&apos;m currently learning is Next.js, Tailwind CSS, and TypeScript on the front-end with Nest.js, TypeScript, and PostgreSQL on the back-end.
         </p>
       </div>
@@ -57,7 +57,7 @@ const Hero = () => {
           document
             .getElementById("projects")
             ?.scrollIntoView({ behavior: "smooth" })
-        } className="absolute bottom-8 hover:brightness-110">View my projects <ArrowDropDownIcon/></button>
+        } className="absolute bottom-8 hover:brightness-110 text-white">View my projects <ArrowDropDownIcon/></button>
     </div>
   );
 };
