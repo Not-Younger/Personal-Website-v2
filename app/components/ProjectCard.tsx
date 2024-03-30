@@ -1,4 +1,6 @@
 import Image from "next/image";
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+
 
 type Project = {
   title: string;
@@ -29,7 +31,7 @@ const ProjectCard = (project: Project) => {
       </div>
       <div className="text-right p-4">
         <a href={project.href} className="text-right opacity-50 hover:brightness-150">
-          View on GitHub
+          View on GitHub<ArrowOutwardIcon className="text-sm" />
         </a>
       </div>
     </div>

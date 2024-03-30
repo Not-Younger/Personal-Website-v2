@@ -6,8 +6,8 @@ type TextGradientProps = {
 }
 
 export default function TextGradient(props: TextGradientProps) {
-  const from = props.from || 'from-purple-600'
-  const via = props.via || 'via-purple-400'
+  const from = props.from || 'from-purple-400'
+  const via = props.via || 'via-purple-200'
   const to = props.to || 'to-pink-400'
 
   return (
