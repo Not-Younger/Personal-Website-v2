@@ -9,9 +9,9 @@ import { useTheme } from "next-themes";
 import { SunIcon } from "@heroicons/react/24/outline";
 import { MoonIcon } from "@heroicons/react/24/solid";
 
-const DropdownItem = (props: { text: string; href: string, target?: boolean }) => {
+const DropdownItem = (props: { text: string; href: string, target: boolean }) => {
   return (
-    <Link href={props.href} target={props.target ? "_blank" : "undefinded"}>
+    <Link href={props.href} target={props.target === false ? "_self" : "_blank"}>
       <button className="w-full text-left justify-center p-1 bg-gray-100 dark:bg-gray-900 border-l-2 border-transparent rounded-r-lg dark:hover:brightness-125 hover:brightness-90 dark:hover:border-l-white hover:border-l-gray-900">
         {props.text}
       </button>
