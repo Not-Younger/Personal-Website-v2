@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <ProjectCard title="Invoice Dashboard App" description="Built a web-app to learn more Next.js and TypeScript. Learned about routing, rendering, data fetching, styling, and other optimizations that come with Next.js." image="/invoicedemo.png" href="https://github.com/Not-Younger/Invoice-App" />
         <ProjectCard title="Social Media/Twitter Clone" description="Created a Twitter clone app using React, PostgreSQL, and Node.js. Users could login, view their feed, like/comment, and follow others." image="/socialmediademo.png" href="https://github.com/Not-Younger/Social-Media-App" />
-        <ProjectCard title="Trading Social Media App" description="Developed a stock market paper trading application that had a social media aspect to it using C++ and React Native. Users could buy/sell stocks and post blogs" image="/stocksquad.png" href="https://github.com/Not-Younger/StockSquad" />
+        <ProjectCard title="Personal Website" description="Developed a personal website entirely using Next.js, TypeScript, and Tailwind CSS. Created all UI components independently." image="/website.png" href="https://github.com/Not-Younger/personal-Website-v2" />
       </div>
     </div>
   );

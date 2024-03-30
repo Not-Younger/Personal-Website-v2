@@ -21,14 +21,14 @@ const Hero = () => {
         ></rect>
       </svg>
       <div className="relative flex flex-col items-center space-y-6 max-w-5xl">
-        <div className="flex items-center gap-1 p-2">
+        <div className="flex items-center gap-4 p-2">
           <Image
             src="/me.jpeg"
             alt="Picture of me!"
             width={100}
             height={100}
             draggable="false"
-            className="rounded-full border-2 border-white dark:border-purple-100"
+            className="rounded-full border-2 border-white dark:border-purple-100 ml-4 md:ml-0"
           />
           <h1 className="max-w-3xl text-center font-bold text-white dark:text-purple-100 text-5xl leading-tight">
             Hi, I&apos;m <TextGradient text="Jonathan" />.

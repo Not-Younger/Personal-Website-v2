@@ -11,13 +11,16 @@ const ProjectCard = (project: Project) => {
   return (
     <div className="flex flex-col justify-between w-80 h-[26rem] bg-purple-400 dark:bg-purple-600 rounded-lg overflow-hidden hover:brightness-110 hover:-translate-y-1 duration-500 shadow-xl">
       <div>
-        <Image
+        <div className="flex justify-center items-center">
+          <Image
           src={project.image}
           alt={project.title}
           width={320}
           height={240}
           draggable="false"
-        />
+          className="w-auto h-auto"
+          />
+        </div>
         <h3 className="px-4 py-2 text-gray-900 dark:text-purple-100 text-2xl">
           {project.title}
         </h3>
