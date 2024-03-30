@@ -20,8 +20,8 @@ const Hero = () => {
           filter="url(#noise)"
         ></rect>
       </svg>
-      <div className="relative flex flex-col items-center space-y-6 max-w-5xl">
-        <div className="flex items-center gap-4 p-2">
+      <div className="relative flex flex-col items-center space-y-6 max-w-5xl ">
+        <div className="flex items-center gap-4">
           <Image
             src="/me.jpeg"
             alt="Picture of me!"
@@ -30,7 +30,7 @@ const Hero = () => {
             draggable="false"
             className="rounded-full border-2 border-white dark:border-purple-100 ml-4 md:ml-0"
           />
-          <h1 className="max-w-3xl text-center font-bold text-white dark:text-purple-100 text-5xl leading-tight">
+          <h1 className="max-w-3xl text-center font-bold text-5xl leading-tight">
             Hi, I&apos;m <TextGradient text="Jonathan" />.
           </h1>
         </div>
@@ -42,17 +42,17 @@ const Hero = () => {
         <p className="text-lg text-center text-white dark:text-purple-100 px-4">
           At the moment I&apos;m learning about full-stack web development. The stack I&apos;m currently learning is Next.js, Tailwind CSS, and TypeScript on the front-end with Nest.js, TypeScript, and PostgreSQL on the back-end.
         </p>
+        <button
+          onClick={() =>
+            document
+              .getElementById("footer")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="z-10 text-lg w-[180px] bg-gradient-to-r from-[#ff874f] to-[#ec5e95] rounded-lg text-gray-50 font-semibold py-[10px] px-4 hover:brightness-125"
+        >
+          Contact Me
+        </button>
       </div>
-      <button
-        onClick={() =>
-          document
-            .getElementById("footer")
-            ?.scrollIntoView({ behavior: "smooth" })
-        }
-        className="z-10 text-lg w-[180px] bg-gradient-to-r from-[#ff874f] to-[#ec5e95] rounded-lg text-gray-50 font-semibold py-[10px] px-4 hover:brightness-125"
-      >
-        Contact Me
-      </button>
       <button onClick={() =>
           document
             .getElementById("projects")

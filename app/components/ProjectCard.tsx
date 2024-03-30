@@ -9,9 +9,9 @@ type Project = {
 
 const ProjectCard = (project: Project) => {
   return (
-    <div className="flex flex-col justify-between w-80 h-[26rem] bg-purple-400 dark:bg-purple-600 rounded-lg overflow-hidden hover:brightness-110 hover:-translate-y-1 duration-500 shadow-xl">
+    <div className="flex flex-col justify-between w-80 h-[26rem] backdrop-blur-lg rounded-lg overflow-hidden hover:brightness-95 dark:brightness-125 dark:hover:brightness-150 hover:-translate-y-1 duration-500 shadow-xl">
       <div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center dark:brightness-75">
           <Image
           src={project.image}
           alt={project.title}

@@ -11,10 +11,13 @@ export default function TextGradient(props: TextGradientProps) {
   const to = props.to || 'to-pink-400'
 
   return (
-    <span
+    <div className="border-b-2 inline-block pb-0 leading-tight">
+      <span
       className={`bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient`}
-    >
-      {props.text}
-    </span>
+      >
+        {props.text}
+      </span>
+    </div>
+    
   )
 }
