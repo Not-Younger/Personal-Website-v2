@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import Provider from "@/app/components/Provider";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: "Jonathan Young",
@@ -26,6 +27,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </Provider>
+        <Analytics />
       </body>
     </html>
   );
