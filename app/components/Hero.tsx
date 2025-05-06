@@ -40,10 +40,7 @@ const Hero = () => {
           passion for software development.
         </p>
         <p className="text-lg text-center text-white px-4">
-          At the moment I&apos;m learning about full-stack web development. The
-          stack I&apos;m currently learning is Next.js, Tailwind CSS, and
-          TypeScript on the front-end with Nest.js, TypeScript, and PostgreSQL
-          on the back-end.
+          At the moment I&apos;m learning iOS development. I&apos;m building the best book and quote tracking app available on the App Store. It&apos;s called QuoteFlow and I&apos;d love for you to check it out!
         </p>
         <a href="mailto:jonathanyoung7718@gmail.com">
           <button className="z-10 text-lg w-[180px] bg-gradient-to-r from-[#ff874f] to-[#ec5e95] rounded-lg text-gray-50 font-semibold py-[10px] px-4 hover:brightness-125">
